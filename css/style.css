@@ -11,8 +11,17 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+.button {
+  padding: 0.9rem 1.8rem;
+  background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(220deg, 16%, 96%);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 7rem;
+}
+
 .container {
-  width: 86%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -36,7 +45,11 @@ body {
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
   padding: 1.5rem 0;
+  z-index: 2;
+  background-color: hsl(0deg, 0%, 100%);
 }
 .nav__container {
   display: flex;
@@ -53,4 +66,34 @@ body {
 }
 .nav__hamburger {
   width: 1.6rem;
+}
+
+.header {
+  width: 100%;
+  background-color: hsl(220deg, 16%, 96%);
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+.header__right {
+  position: relative;
+  width: 100%;
+  top: -3rem;
+}
+.header__img {
+  width: 100%;
+}
+.header__h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+  margin-bottom: 1rem;
+}
+.header__p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

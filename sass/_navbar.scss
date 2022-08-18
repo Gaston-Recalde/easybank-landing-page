@@ -1,5 +1,11 @@
+@use './variables' as v;
+
 .nav{
+    position: fixed;
+    width: 100%;
     padding: 1.5rem 0;
+    z-index: 2;
+    background-color: v.$white;
 
     &__container{
         display: flex;

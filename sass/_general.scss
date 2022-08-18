@@ -13,6 +13,15 @@ body{
     font-family: 'Public Sans', sans-serif;
 }
 
+.button{
+    padding: 0.9rem 1.8rem;
+    background-image: linear-gradient(to right, v.$lime-green, v.$bright-cyan);
+    color: v.$light-grayish-blue;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 7rem;
+}
+
 .container{
     width: v.$container-sm;
     margin: 0 auto;
