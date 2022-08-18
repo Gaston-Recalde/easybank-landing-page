@@ -3,6 +3,7 @@
 .easybank{
     padding-top: 4.5rem;
     text-align: center;
+    background-color: v.$light-grayish-blue;
 
     &__articles{
         display: flex;
@@ -32,4 +33,5 @@
         line-height: 1.7rem;
         font-size: 0.9rem;
     }
+    padding-bottom: 2rem;
 }
