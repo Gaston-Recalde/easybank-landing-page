@@ -20,6 +20,14 @@ body {
   border-radius: 7rem;
 }
 
+p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -75,6 +83,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
+  padding-bottom: 4.5rem;
 }
 .header__right {
   position: relative;
@@ -90,10 +99,32 @@ body {
   color: hsl(233deg, 26%, 24%);
   margin-bottom: 1rem;
 }
-.header__p {
-  color: hsl(233deg, 8%, 62%);
-  font-size: 0.9rem;
-  line-height: 1.5rem;
+
+.easybank {
+  padding-top: 4.5rem;
+  text-align: center;
+}
+.easybank__articles {
+  display: flex;
+  flex-direction: column;
+}
+.easybank__h2 {
+  color: hsl(233deg, 26%, 24%);
+  font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+.easybank__p {
+  margin-bottom: 3.5rem;
+}
+.easybank .article__h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+  margin-bottom: 1rem;
+}
+.easybank .article__p {
+  margin-bottom: 2.5rem;
+  line-height: 1.7rem;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */

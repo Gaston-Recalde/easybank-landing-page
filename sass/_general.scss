@@ -22,6 +22,14 @@ body{
     border-radius: 7rem;
 }
 
+p{
+    color: v.$grayish-blue;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
 .container{
     width: v.$container-sm;
     margin: 0 auto;

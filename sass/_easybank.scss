@@ -1,0 +1,35 @@
+@use './variables' as v;
+
+.easybank{
+    padding-top: 4.5rem;
+    text-align: center;
+
+    &__articles{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__h2{
+        color: v.$dark-blue;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    &__p{
+        margin-bottom: 3.5rem;
+    }
+
+    .article__h4{
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: v.$dark-blue;
+        margin-bottom: 1rem;
+    }
+
+    .article__p{
+        margin-bottom: 2.5rem;
+        line-height: 1.7rem;
+        font-size: 0.9rem;
+    }
+}
