@@ -1,0 +1,29 @@
+.nav{
+    padding: 1.5rem 0;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__logo{
+
+    }
+
+    &__link{
+        display: none;
+    }
+
+    &__button{
+        display: none;
+    }
+
+    &__close{
+        display: none;
+    }
+
+    &__hamburger{
+        width: 1.6rem;
+    }
+}
