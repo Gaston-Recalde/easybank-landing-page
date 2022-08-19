@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   border-style: none;
+  list-style: none;
 }
 
 body {
@@ -65,6 +66,24 @@ p {
 }
 .nav__link {
   display: none;
+  position: fixed;
+  top: 5.5rem;
+  width: 90%;
+  background-color: hsl(0deg, 0%, 100%);
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+.nav__link .nav__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.7rem;
+  margin: 0 auto;
+}
+.nav__link .nav__ul .nav__li a {
+  color: hsl(233deg, 26%, 24%);
+  font-weight: 700;
 }
 .nav__button {
   display: none;

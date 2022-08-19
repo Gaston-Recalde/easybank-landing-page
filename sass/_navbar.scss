@@ -13,12 +13,31 @@
 
     }
 
-    &__logo{
-
-    }
-
     &__link{
         display: none;
+        position: fixed;
+        top: 5.5rem;
+        width: 90%;
+        background-color: v.$white;
+        margin: 0 auto;
+        border-radius: 0.5rem;
+
+        .nav__ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.7rem;
+            margin: 0 auto;
+            
+            .nav__li{
+
+                a{
+                    color: v.$dark-blue;
+                    font-weight: 700;
+                }
+            }
+        }
     }
 
     &__button{
