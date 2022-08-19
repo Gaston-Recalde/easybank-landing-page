@@ -1,0 +1,61 @@
+@use './variables' as v;
+
+.footer{
+    text-align: center;
+    padding-top: 2.5rem;
+    background-color: v.$dark-blue;
+
+    &__containers{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__social{
+
+        .footer__logo{
+            color: v.$white;
+            margin-bottom: 2rem;
+        }
+
+        .social{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .social__icon{
+                width: 1.5rem;
+            }
+        }
+    }
+
+    &__nav{
+
+        .footer__links{
+            display: flex;
+            flex-direction: column;
+            gap: 1.3rem;
+            margin-bottom: 1.3rem;
+
+            a{
+                color: v.$grayish-blue;
+                font-weight: 700;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    &__copy{
+        // display: flex;
+        // flex-direction: column;
+        // gap: 2rem;
+        // width: fit-content;
+        .button{
+            margin-bottom: 1.7rem;
+        }
+
+        .footer__p{
+            margin-bottom: 2rem;
+        }
+    }
+}

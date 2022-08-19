@@ -134,6 +134,7 @@ p {
 .latest {
   padding-top: 5rem;
   text-align: center;
+  padding-bottom: 4rem;
 }
 .latest__h2 {
   font-size: 1.9rem;
@@ -182,4 +183,44 @@ p {
 .latest .article__info p {
   font-size: 0.8rem;
   line-height: 1.2rem;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 2.5rem;
+  background-color: hsl(233deg, 26%, 24%);
+}
+.footer__containers {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__social .footer__logo {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 2rem;
+}
+.footer__social .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer__social .social .social__icon {
+  width: 1.5rem;
+}
+.footer__nav .footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+.footer__nav .footer__links a {
+  color: hsl(233deg, 8%, 62%);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.footer__copy .button {
+  margin-bottom: 1.7rem;
+}
+.footer__copy .footer__p {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
