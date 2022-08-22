@@ -95,6 +95,55 @@ p {
   width: 1.6rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .nav {
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 2;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__link {
+    display: flex;
+    position: inherit;
+    top: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    background-color: hsl(0deg, 0%, 100%);
+    margin: 0 auto;
+    border-radius: 0.5rem;
+  }
+  .nav__link .nav__ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .nav__link .nav__ul .nav__li a {
+    color: hsl(233deg, 26%, 24%);
+    font-weight: 700;
+  }
+  .nav__button {
+    display: inline-block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .nav__close {
+    display: none;
+  }
+  .nav__hamburger {
+    display: none;
+  }
+}
 .header {
   width: 100%;
   background-color: hsl(220deg, 16%, 96%);
