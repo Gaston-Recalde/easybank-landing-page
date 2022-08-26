@@ -26,6 +26,10 @@
             .social__icon{
                 width: 1.5rem;
             }
+
+            .social__icon:hover{
+                cursor: pointer;
+            }
         }
     }
 
@@ -42,6 +46,10 @@
                 font-weight: 700;
                 font-size: 0.9rem;
             }
+
+            a:hover{
+                color: v.$lime-green;
+            }
         }
     }
 
@@ -55,6 +63,10 @@
 
         .button{
             margin-bottom: 1.7rem;
+        }
+
+        .button:hover{
+            filter: brightness(1.25);
         }
 
         .footer__p{

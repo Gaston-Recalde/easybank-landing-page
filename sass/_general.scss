@@ -23,6 +23,11 @@ body{
     border-radius: 7rem;
 }
 
+.button:hover{
+    cursor: pointer;
+    filter: opacity(0.50);
+}
+
 p{
     color: v.$grayish-blue;
     font-size: 0.9rem;

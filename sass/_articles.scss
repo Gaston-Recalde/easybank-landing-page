@@ -67,11 +67,17 @@
             margin: 0.7rem 0;
             font-weight: 400;
         }
+        
+        h5:hover{
+            cursor: pointer;
+            color: v.$lime-green;
+        }
 
         p{
             font-size: 0.8rem;
             line-height: 1.2rem;
         }
+
     }
 }
 

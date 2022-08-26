@@ -21,6 +21,11 @@ body {
   border-radius: 7rem;
 }
 
+.button:hover {
+  cursor: pointer;
+  filter: opacity(0.5);
+}
+
 p {
   color: hsl(233deg, 8%, 62%);
   font-size: 0.9rem;
@@ -317,6 +322,10 @@ p {
   margin: 0.7rem 0;
   font-weight: 400;
 }
+.latest .article__info h5:hover {
+  cursor: pointer;
+  color: hsl(136deg, 65%, 51%);
+}
 .latest .article__info p {
   font-size: 0.8rem;
   line-height: 1.2rem;
@@ -372,6 +381,9 @@ p {
 .footer__social .social .social__icon {
   width: 1.5rem;
 }
+.footer__social .social .social__icon:hover {
+  cursor: pointer;
+}
 .footer__nav .footer__links {
   display: flex;
   flex-direction: column;
@@ -383,11 +395,17 @@ p {
   font-weight: 700;
   font-size: 0.9rem;
 }
+.footer__nav .footer__links a:hover {
+  color: hsl(136deg, 65%, 51%);
+}
 .footer__copy {
   text-align: center;
 }
 .footer__copy .button {
   margin-bottom: 1.7rem;
+}
+.footer__copy .button:hover {
+  filter: brightness(1.25);
 }
 .footer__copy .footer__p {
   margin-bottom: 2rem;
