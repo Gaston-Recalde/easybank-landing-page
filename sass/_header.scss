@@ -2,7 +2,7 @@
 
 .header{
     width: 100%;
-    background-color: v.$light-grayish-blue;
+    background-color: v.$white;
     background-image: url('../images/bg-intro-mobile.svg');
     // background-position: center;
     background-repeat: no-repeat;
@@ -47,4 +47,61 @@
     // }
 
     padding-bottom: 4.5rem;
+}
+
+@media screen and (min-width:1024px) {
+    .header{
+        width: 100%;
+        // background-color: v.$light-grayish-blue;
+        background-image: url('../images/bg-intro-desktop.svg');
+        background-position: calc(100% + 10rem);
+        background-repeat: no-repeat;
+        background-size: contain;
+        // background-position-y: -3.5rem;
+    
+        // &__container{
+        //     // background-color: v.$grayish-blue;
+        // }
+    
+        text-align: center;
+
+        &__container{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    
+        &__right{
+            position: relative;
+            width: 100%;
+            top: -3rem;
+        }
+    
+        &__img{
+            // position: relative;
+            width: 100%;
+            // right: calc(100% + 10rem);
+            // top: 2rem;
+        }
+    
+        // &__left{
+            
+        // }
+    
+        &__h1{
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: v.$dark-blue;
+            margin-bottom: 1rem;
+        }
+    
+        // &__p{
+        //     color: v.$grayish-blue;
+        //     font-size: 0.9rem;
+        //     line-height: 1.5rem;
+        //     font-weight: 400;
+        //     margin-bottom: 1.5rem;
+        // }
+    
+        padding-bottom: 4.5rem;
+    }
 }

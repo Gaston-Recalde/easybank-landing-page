@@ -34,7 +34,7 @@ p {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 80%;
   }
@@ -146,7 +146,7 @@ p {
 }
 .header {
   width: 100%;
-  background-color: hsl(220deg, 16%, 96%);
+  background-color: hsl(0deg, 0%, 100%);
   background-image: url("../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -168,6 +168,35 @@ p {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 100%;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-position: calc(100% + 10rem);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding-bottom: 4.5rem;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header__right {
+    position: relative;
+    width: 100%;
+    top: -3rem;
+  }
+  .header__img {
+    width: 100%;
+  }
+  .header__h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: hsl(233deg, 26%, 24%);
+    margin-bottom: 1rem;
+  }
+}
 .easybank {
   padding-top: 4.5rem;
   text-align: center;
@@ -175,8 +204,11 @@ p {
   padding-bottom: 2rem;
 }
 .easybank__articles {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 .easybank__h2 {
   color: hsl(233deg, 26%, 24%);
@@ -186,6 +218,9 @@ p {
 }
 .easybank__p {
   margin-bottom: 3.5rem;
+}
+.easybank__article {
+  width: 300px;
 }
 .easybank .article__h4 {
   font-size: 1.3rem;
@@ -199,6 +234,27 @@ p {
   font-size: 0.9rem;
 }
 
+@media screen and (min-width: 768px) {
+  .easybank__articles {
+    grid-template-columns: 1fr 1fr;
+    max-width: inherit;
+    text-align: left;
+    gap: 1rem;
+  }
+  .easybank__h2 {
+    text-align: left;
+  }
+  .easybank__p {
+    text-align: left;
+    max-width: 50%;
+  }
+  .easybank__article {
+    width: 244px;
+  }
+  .easybank .article__img {
+    margin-bottom: 1rem;
+  }
+}
 .latest {
   padding-top: 5rem;
   text-align: center;
