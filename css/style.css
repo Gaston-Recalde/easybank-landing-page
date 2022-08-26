@@ -255,10 +255,16 @@ p {
     margin-bottom: 1rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .easybank__articles {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .latest {
   padding-top: 5rem;
   text-align: center;
   padding-bottom: 4rem;
+  background-color: hsl(0deg, 0%, 98%);
 }
 .latest__h2 {
   font-size: 1.9rem;
@@ -267,8 +273,15 @@ p {
   margin-bottom: 1.5rem;
 }
 .latest__articles {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.latest__article {
+  width: 300px;
+  background-color: hsl(0deg, 0%, 100%);
 }
 .latest .article__img {
   border-radius: 0.5rem 0.5rem 0 0;
@@ -309,6 +322,34 @@ p {
   line-height: 1.2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .latest {
+    padding-top: 5rem;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .latest__h2 {
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+  .latest__articles {
+    grid-template-columns: 1fr 1fr;
+    max-width: inherit;
+    text-align: left;
+    gap: 1rem;
+  }
+  .latest__article {
+    width: 244px;
+  }
+  .latest .article__info {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .latest__articles {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .footer {
   text-align: center;
   padding-top: 2.5rem;
