@@ -3,33 +3,17 @@
 .header{
     width: 100%;
     background-color: v.$white;
-    background-image: url('../images/bg-intro-mobile.svg');
-    // background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    // background-position-y: -3.5rem;
-
-    // &__container{
-    //     // background-color: v.$grayish-blue;
-    // }
-
     text-align: center;
+    padding-bottom: 4.5rem;
+    padding-top: 4.5rem;
 
     &__right{
-        position: relative;
-        width: 100%;
-        top: -3rem;
+        height: 300px;
+        margin: 0 calc(-1 * ((100% - v.$container-sm)/2));
+        background: url(../images/image-mockups.png) center bottom no-repeat, url(../images/bg-intro-mobile.svg) center no-repeat;
+        background-size: 345px, cover;
+        margin-bottom: 1rem;
     }
-
-    &__img{
-        // position: relative;
-        width: 100%;
-        // top: 2rem;
-    }
-
-    // &__left{
-        
-    // }
 
     &__h1{
         font-size: 2.5rem;
@@ -38,70 +22,69 @@
         margin-bottom: 1rem;
     }
 
-    // &__p{
-    //     color: v.$grayish-blue;
-    //     font-size: 0.9rem;
-    //     line-height: 1.5rem;
-    //     font-weight: 400;
-    //     margin-bottom: 1.5rem;
-    // }
+    
+}
 
-    padding-bottom: 4.5rem;
+@media screen and (min-width:768px) {
+    .header{
+
+        // &__container{
+        //     display: grid;
+        //     grid-template-areas: "left right";
+        //     grid-template-columns: 1fr 1fr;
+        //     // grid-template-columns: 480px 1fr;  EN 1280px
+        //     align-items: center;
+        //     min-height: 450px;
+        //     margin: none;
+        // }
+        
+        &__right{
+            // grid-area: right;
+            // background: url(../images/image-mockups.png) center bottom no-repeat, url(../images/bg-intro-mobile.svg) center -200px no-repeat;
+            // background-size: 345px, cover;
+            margin: 0 calc(-1 * 4.5rem); //0 -25%
+            margin-bottom: 2rem;
+            // min-height: inherit;
+        }
+
+        &__left{
+            // grid-area: left;
+            text-align: left;
+        }
+    }
 }
 
 @media screen and (min-width:1024px) {
     .header{
-        width: 100%;
-        // background-color: v.$light-grayish-blue;
-        background-image: url('../images/bg-intro-desktop.svg');
-        background-position: calc(100% + 10rem);
-        background-repeat: no-repeat;
-        background-size: contain;
-        // background-position-y: -3.5rem;
-    
-        // &__container{
-        //     // background-color: v.$grayish-blue;
-        // }
-    
-        text-align: center;
+        // text-align: left;
+        background: url(../images/bg-intro-desktop.svg) right -200px top -50px no-repeat;
+        background-size: 750px;
+        min-height: 650px;
 
         &__container{
-            display: flex;
-            flex-direction: row-reverse;
+            display: grid;
+            grid-template-areas: "left right";
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            height: 500px;
+            // gap: 5rem;
         }
     
         &__right{
-            position: relative;
-            width: 100%;
-            top: -3rem;
+            grid-area: right;
+            margin: 0;
+            position: absolute;
+            min-height: inherit;
+            width: 700px;
+            right: 0;
+            background: url(../images/image-mockups.png) right -80px bottom -20px no-repeat;
+            background-size: 500px;
+            height: 768px;
+            // margin-bottom: 2rem;
         }
     
-        &__img{
-            // position: relative;
-            width: 100%;
-            // right: calc(100% + 10rem);
-            // top: 2rem;
+        &__left{
+            grid-area: left;
         }
-    
-        // &__left{
-            
-        // }
-    
-        &__h1{
-            font-size: 2.5rem;
-            font-weight: 400;
-            color: v.$dark-blue;
-            margin-bottom: 1rem;
-        }
-    
-        // &__p{
-        //     color: v.$grayish-blue;
-        //     font-size: 0.9rem;
-        //     line-height: 1.5rem;
-        //     font-weight: 400;
-        //     margin-bottom: 1.5rem;
-        // }
-    
-        padding-bottom: 4.5rem;
     }
 }
