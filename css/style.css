@@ -133,8 +133,14 @@ p {
     margin: 0 auto;
   }
   .nav__link .nav__ul .nav__li a {
-    color: hsl(233deg, 26%, 24%);
+    color: hsl(233deg, 8%, 62%);
     font-weight: 700;
+  }
+  .nav__link .nav__ul .nav__li a:hover {
+    color: hsl(233deg, 26%, 24%);
+  }
+  .nav__link .nav__ul .nav__li:hover {
+    border-bottom: 3px solid hsl(136deg, 65%, 51%);
   }
   .nav__button {
     display: inline-block;
@@ -205,6 +211,16 @@ p {
   }
   .header__left {
     grid-area: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    background: url(../images/bg-intro-desktop.svg) right -200px top -75px no-repeat;
+    background-size: 850px;
+  }
+  .header__right {
+    background: url(../images/image-mockups.png) right -85px bottom -20px no-repeat;
+    background-size: 515px;
   }
 }
 .easybank {
@@ -383,11 +399,12 @@ p {
   justify-content: center;
   gap: 1rem;
 }
-.footer__social .social .social__icon {
-  width: 1.5rem;
+.footer__social .social a {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.8rem;
 }
-.footer__social .social .social__icon:hover {
-  cursor: pointer;
+.footer__social .social a:hover {
+  color: hsl(136deg, 65%, 51%);
 }
 .footer__nav .footer__links {
   display: flex;

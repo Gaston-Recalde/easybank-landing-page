@@ -88,3 +88,15 @@
         }
     }
 }
+
+@media screen and (min-width:1280px) {
+    .header{
+        background: url(../images/bg-intro-desktop.svg) right -200px top -75px no-repeat;
+        background-size: 850px;
+    
+        &__right{
+            background: url(../images/image-mockups.png) right -85px bottom -20px no-repeat;
+            background-size: 515px;
+        }
+    }
+}

@@ -88,9 +88,17 @@
                 .nav__li{
     
                     a{
-                        color: v.$dark-blue;
+                        color: v.$grayish-blue;
                         font-weight: 700;
                     }
+
+                    a:hover{
+                        color: v.$dark-blue;
+                    }
+                }
+
+                .nav__li:hover{
+                    border-bottom: 3px solid v.$lime-green;
                 }
             }
         }
