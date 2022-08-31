@@ -33,7 +33,7 @@
             .nav__li{
 
                 a{
-                    color: v.$dark-blue;
+                    color: v.$grayish-blue;
                     font-weight: 700;
                 }
             }
@@ -41,49 +41,60 @@
         }
     }
 
+    
+    &__toggle{
+        
+        .nav__hamburger{
+            display: inline-block;
+            width: 1.6rem;
+        }
+
+        .nav__close{
+            display: none;
+        }
+    }
+
     &__button{
         display: none;
     }
 
-    &__close{
-        display: none;
-    }
+}
 
-    &__hamburger{
-        width: 1.6rem;
+@media screen and (min-width: 768px) {
+    .nav{
+        &__link{
+            margin: 0 -5%;
+        }
     }
 }
 
 @media screen and (min-width: 1024px) {
     .nav{
-        position: fixed;
-        width: 100%;
-        padding: 1.5rem 0;
-        z-index: 2;
-        background-color: v.$white;
     
         &__container{
-            display: flex;
-            justify-content: space-between;
             align-items: center;
+        }
+
+        &__toggle{
+            display: none;
+
+            .nav__close{
+                display: none;
+            }
+        
+            .nav__hamburger{
+                display: none;
+            }
         }
     
         &__link{
-            display: flex;
+            display: flex !important;
             position: inherit;
-            top: 0;
             width: max-content;
-            background-color: v.$white;
-            margin: 0 auto;
-            border-radius: 0.5rem;
     
             .nav__ul{
-                display: flex;
                 flex-direction: row;
-                align-items: center;
-                gap: 1.5rem;
                 padding: 0;
-                margin: 0 auto;
                 
                 .nav__li{
     
@@ -106,14 +117,6 @@
         &__button{
             display: inline-block;
             width: fit-content;
-        }
-    
-        &__close{
-            display: none;
-        }
-    
-        &__hamburger{
-            display: none;
         }
     }
 }

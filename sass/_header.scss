@@ -27,28 +27,13 @@
 
 @media screen and (min-width:768px) {
     .header{
-
-        // &__container{
-        //     display: grid;
-        //     grid-template-areas: "left right";
-        //     grid-template-columns: 1fr 1fr;
-        //     // grid-template-columns: 480px 1fr;  EN 1280px
-        //     align-items: center;
-        //     min-height: 450px;
-        //     margin: none;
-        // }
         
         &__right{
-            // grid-area: right;
-            // background: url(../images/image-mockups.png) center bottom no-repeat, url(../images/bg-intro-mobile.svg) center -200px no-repeat;
-            // background-size: 345px, cover;
-            margin: 0 calc(-1 * 4.5rem); //0 -25%
+            margin: 0 calc(-1 * 4.5rem); 
             margin-bottom: 2rem;
-            // min-height: inherit;
         }
 
         &__left{
-            // grid-area: left;
             text-align: left;
         }
     }
@@ -56,7 +41,6 @@
 
 @media screen and (min-width:1024px) {
     .header{
-        // text-align: left;
         background: url(../images/bg-intro-desktop.svg) right -200px top -50px no-repeat;
         background-size: 750px;
         min-height: 650px;
@@ -67,7 +51,6 @@
             grid-template-columns: 1fr 1fr;
             align-items: center;
             height: 500px;
-            // gap: 5rem;
         }
     
         &__right{
@@ -80,7 +63,6 @@
             background: url(../images/image-mockups.png) right -80px bottom -20px no-repeat;
             background-size: 500px;
             height: 768px;
-            // margin-bottom: 2rem;
         }
     
         &__left{

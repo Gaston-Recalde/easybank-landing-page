@@ -26,26 +26,11 @@
             a{
                 color: v.$white;
                 font-size: 1.8rem;
-                // display: flex;
-                // padding: 0.4rem;
             }
 
             a:hover{
                 color: v.$lime-green;
             }
-
-            // .social__icon{
-            //     width: 1.5rem;
-
-            //     .bx{
-            //         width: 1.5rem;
-            //     }
-            // }
-
-            // .social__icon:hover{
-            //     cursor: pointer;
-            //     fill: v.$lime-green
-            // }
         }
     }
 
@@ -70,11 +55,6 @@
     }
 
     &__copy{
-        // display: flex;
-        // flex-direction: column;
-        // gap: 2rem;
-        // width: fit-content;
-
         text-align: center;
 
         .button{
@@ -91,20 +71,11 @@
     }
 }
 
-// @media screen and (min-width: 768px) {
-    
-// }
-
 @media screen and (min-width: 1024px) {
     .footer{
-        // text-align: center;
-        // padding-top: 2.5rem;
-        // background-color: v.$dark-blue;
     
         &__containers{
-            // display: flex;
             flex-direction: row;
-            // gap: 2rem;
             justify-content: space-between;
         }
     
@@ -112,22 +83,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            // width: 244px;
-    
-            // .footer__logo{
-            //     color: v.$white;
-            //     margin-bottom: 2rem;
-            // }
     
             .social{
-                // display: flex;
-                // justify-content: center;
-                // gap: 1rem;
                 margin-bottom: 2rem;
-    
-                // .social__icon{
-                //     width: 1.5rem;
-                // }
             }
         }
     
@@ -152,10 +110,6 @@
         }
     
         &__copy{
-            // display: flex;
-            // flex-direction: column;
-            // gap: 2rem;
-            // width: fit-content;
             text-align: right;
 
             .button{
@@ -171,74 +125,8 @@
 
 @media screen and (min-width: 1280px) {
     .footer{
-        // text-align: center;
-        // padding-top: 2.5rem;
-        // background-color: v.$dark-blue;
-    
-        &__containers{
-            // display: flex;
-            flex-direction: row;
-            // gap: 2rem;
-            justify-content: space-between;
-        }
-    
-        &__social{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            // width: 244px;
-    
-            // .footer__logo{
-            //     color: v.$white;
-            //     margin-bottom: 2rem;
-            // }
-    
-            // .social{
-            //     display: flex;
-            //     justify-content: center;
-            //     gap: 1rem;
-            //     margin-bottom: 2rem;
-    
-            //     .social__icon{
-            //         width: 1.5rem;
-            //     }
-            // }
-        }
-    
         &__nav{
-            display: flex;
-            text-align: left;
             width: 375px;
-            gap: 2rem;
-    
-            .footer__links{
-                display: flex;
-                flex-direction: column;
-                gap: 1.3rem;
-                margin-bottom: 1.3rem;
-    
-                a{
-                    color: v.$grayish-blue;
-                    font-weight: 700;
-                    font-size: 0.9rem;
-                }
-            }
-        }
-    
-        &__copy{
-            // display: flex;
-            // flex-direction: column;
-            // gap: 2rem;
-            // width: fit-content;
-            text-align: right;
-
-            .button{
-                margin-bottom: 1.7rem;
-            }
-    
-            .footer__p{
-                margin-bottom: 2rem;
-            }
         }
     }
 }

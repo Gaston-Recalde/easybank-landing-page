@@ -94,50 +94,48 @@ p {
   margin: 0 auto;
 }
 .nav__link .nav__ul .nav__li a {
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233deg, 8%, 62%);
   font-weight: 700;
+}
+.nav__toggle .nav__hamburger {
+  display: inline-block;
+  width: 1.6rem;
+}
+.nav__toggle .nav__close {
+  display: none;
 }
 .nav__button {
   display: none;
 }
-.nav__close {
-  display: none;
-}
-.nav__hamburger {
-  width: 1.6rem;
-}
 
-@media screen and (min-width: 1024px) {
-  .nav {
-    position: fixed;
-    width: 100%;
-    padding: 1.5rem 0;
-    z-index: 2;
-    background-color: hsl(0deg, 0%, 100%);
+@media screen and (min-width: 768px) {
+  .nav__link {
+    margin: 0 -5%;
   }
+}
+@media screen and (min-width: 1024px) {
   .nav__container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__toggle .nav__close {
+    display: none;
+  }
+  .nav__toggle .nav__hamburger {
+    display: none;
+  }
   .nav__link {
-    display: flex;
+    display: flex !important;
     position: inherit;
-    top: 0;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    background-color: hsl(0deg, 0%, 100%);
-    margin: 0 auto;
-    border-radius: 0.5rem;
   }
   .nav__link .nav__ul {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
     padding: 0;
-    margin: 0 auto;
   }
   .nav__link .nav__ul .nav__li a {
     color: hsl(233deg, 8%, 62%);
@@ -154,12 +152,6 @@ p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-  }
-  .nav__close {
-    display: none;
-  }
-  .nav__hamburger {
-    display: none;
   }
 }
 .header {
@@ -360,11 +352,6 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .latest {
-    padding-top: 5rem;
-    text-align: center;
-    padding-bottom: 4rem;
-  }
   .latest__h2 {
     margin-bottom: 2.5rem;
     text-align: left;
@@ -481,40 +468,8 @@ p {
   }
 }
 @media screen and (min-width: 1280px) {
-  .footer__containers {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .footer__social {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
   .footer__nav {
-    display: flex;
-    text-align: left;
     width: 375px;
-    gap: 2rem;
-  }
-  .footer__nav .footer__links {
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    margin-bottom: 1.3rem;
-  }
-  .footer__nav .footer__links a {
-    color: hsl(233deg, 8%, 62%);
-    font-weight: 700;
-    font-size: 0.9rem;
-  }
-  .footer__copy {
-    text-align: right;
-  }
-  .footer__copy .button {
-    margin-bottom: 1.7rem;
-  }
-  .footer__copy .footer__p {
-    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 1440px) {

@@ -46,29 +46,19 @@
 @media screen and (min-width: 768px) {
 
     .easybank{
-        // padding-top: 5rem;
-        // text-align: center;
-        // background-color: v.$light-grayish-blue;
     
         &__articles{
-            // display: grid;
             grid-template-columns: 1fr 1fr;
             max-width: inherit;
-            // margin: 0 auto;
             text-align: left;
             gap: 1rem;
         }
     
         &__h2{
-            // color: v.$dark-blue;
-            // font-size: 2rem;
-            // font-weight: 400;
-            // margin-bottom: 1rem;
             text-align: left;
         }
     
         &__p{
-            // margin-bottom: 3.5rem;
             text-align: left;
             max-width: 50%;
         }
@@ -80,26 +70,8 @@
         .article__img{
             margin-bottom: 1rem;
         }
-    
-        // .article__h4{
-        //     font-size: 1.3rem;
-        //     font-weight: 400;
-        //     color: v.$dark-blue;
-        //     margin-bottom: 1rem;
-        // }
-    
-        // .article__p{
-        //     margin-bottom: 2.5rem;
-        //     line-height: 1.7rem;
-        //     font-size: 0.9rem;
-        // }
-        // padding-bottom: 2rem;
     }
 }
-
-// @media screen and (min-width: 1024px) {
-
-// }
 
 @media screen and (min-width: 1280px) {
     .easybank{
