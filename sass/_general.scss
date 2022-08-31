@@ -54,5 +54,12 @@ p{
     }
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: v.$dark-blue;
+    color: v.$grayish-blue;
+}
+.attribution a { color: v.$white; }
+.attribution a:hover { color: v.$lime-green; }
