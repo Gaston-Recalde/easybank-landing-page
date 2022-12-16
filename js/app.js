@@ -16,8 +16,6 @@ openNavBtn.addEventListener('click', () => {
     closeNavBtn.style.display = 'inline-block';
 })
 
-
-// Close nav menu when menu a menu item is clicked
 if(window.innerWidth < 1024){
     document.querySelectorAll('.nav__ul li').forEach(navItems => {
         navItems.addEventListener('click', () => {
